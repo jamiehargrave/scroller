@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<style>
+  .wrapper {
+    width: 840px;
+    height: 420px;
+    overflow: hidden;
+    display: block;
+}
+
+.slide-bg {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://cdn.rawgit.com/airgiraffe/fd520d7a0a356af9edead40621dafb2f/raw/257d0dbee58defe6b03ef1b0dd2144e2cc47c953/background-scroller.svg);
+    background-repeat: repeat-x;
+    background-size: 500%;
+    background-position: 0%;
+    animation: animatedBackground 8s linear infinite;
+    position: relative;
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0%,
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+.van {
+    height: 60%;
+    width: 100%;
+    background-image: url(https://cdn.rawgit.com/airgiraffe/853fcfa302290ef8603588d92c17992c/raw/66167f2474444bc0146a998b1173537e80131d25/scroller-van.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+    bottom: 0;
+    margin: 0 auto;
+    position: absolute;
+}
+</style>
+<div class="wrapper">
+    <div class="slide-bg">
+        <div class="van"></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
